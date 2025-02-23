@@ -1,0 +1,12 @@
+<!-- complaints/templates/complaints/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Welcome to the Complaint System{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to the Complaint Management System</h1>
+    <p><a href="{% url 'complaint_list' %}" class="btn btn-primary">View Complaints</a></p>
+    <p><a href="{% url 'submit_complaint' %}" class="btn btn-success">Submit a New Complaint</a></p>
+</div>
+{% endblock %}

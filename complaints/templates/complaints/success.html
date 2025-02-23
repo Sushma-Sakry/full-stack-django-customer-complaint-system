@@ -1,0 +1,13 @@
+<!-- complaints/templates/complaints/success.html -->
+{% extends 'base.html' %}
+
+{% block title %}Submission Successful{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Thank You!</h1>
+    <p>Your complaint has been submitted successfully.</p>
+    <a href="{% url 'complaint_list' %}" class="btn btn-primary">View Complaints</a>
+    <a href="{% url 'submit_complaint' %}" class="btn btn-success">Submit Another Complaint</a>
+</div>
+{% endblock %}
